@@ -7,6 +7,9 @@ o
 
 Descargar y abrir solamente el "index.html"
 
+Los cartillas de 75 bolas puedes descargarlas desde <a href="http://www.bingo.es/cartones-bingo/" target="_blank">Aquí</a> e imprimirlas.<br>
+# Créditos: http://www.bingo.es/
+
 Realizado con:
 <ul>
   <li>HTML5</li>
