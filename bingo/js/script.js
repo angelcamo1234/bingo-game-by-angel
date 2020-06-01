@@ -27,7 +27,8 @@ const bingo = new Vue({
                 let index = Math.floor(Math.random() * this.bolas.length)
                 let number = this.bolas[index]
                 let bola = document.querySelector(`.item-${number}`)
-                bola.classList.toggle("number-on")
+                bola.classList.add("number-on")
+                bola.classList.remove("number-off")
 
                 if (number >= 1 && number <= 15) {
                     this.bola_sale = `B ${number}`
@@ -50,11 +51,13 @@ const bingo = new Vue({
         reiniciarJuego() {
             if (confirm("¿Seguro de reiniciar el juego?")) {
                 this.bola_sale = ""
-                this.bolas = this.bolas_recarga
                 let bola = ""
+                this.bolas = []
                 for (let i = 1; i <= 75; i++) {
+                    this.bolas.push(i)
                     bola = document.querySelector(`.item-${i}`)
                     bola.classList.remove("number-on")
+                    bola.classList.add("number-off")
                 }
             }
         }

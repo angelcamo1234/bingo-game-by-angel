@@ -1,9 +1,15 @@
 :root {
     --radius: 35px;
     --bg-letter: red;
+    --color-letter: white;
     --bg-number-off: white;
     --bg-number-on: yellow;
     --solid: 1px solid black;
+    --bg-total: skyblue;
+}
+
+body {
+    background: var(--bg-total);
 }
 
 .container {
@@ -20,7 +26,7 @@
     grid-template-rows: 70px 70px 70px 70px 70px;
     column-gap: 10px;
     row-gap: 15px;
-    background: white;
+    background: var(--bg-total);
 }
 
 .flex-center {
@@ -50,30 +56,35 @@
     grid-column-start: 1;
     grid-row-start: 1;
     background: var(--bg-letter);
+    color: var(--color-letter);
 }
 
 .item-i {
     grid-column-start: 1;
     grid-row-start: 2;
     background: var(--bg-letter);
+    color: var(--color-letter);
 }
 
 .item-n {
     grid-column-start: 1;
     grid-row-start: 3;
     background: var(--bg-letter);
+    color: var(--color-letter);
 }
 
 .item-g {
     grid-column-start: 1;
     grid-row-start: 4;
     background: var(--bg-letter);
+    color: var(--color-letter);
 }
 
 .item-o {
     grid-column-start: 1;
     grid-row-start: 5;
     background: var(--bg-letter);
+    color: var(--color-letter);
 }
 
 .resultados {
